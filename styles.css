@@ -1,0 +1,96 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-background: hsl(217, 54%, 11%);
+    --card-background: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    padding: 10% 40%;
+    background-color: var(--main-background);
+    font-size: 1rem;
+    font-family: Outfit;
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 80vh;
+    background-color: var(--card-background);
+    border-radius: 0.7rem;
+    padding: 7.5%;
+}
+.container img {
+    flex-basis: 100%;
+    max-height: 55%;
+    border-radius: 0.3rem;
+    align-self: center;
+}
+.container .title {
+    color: var(--white);
+    font-weight: 600;
+}
+.description {
+    color: var(--soft-blue);
+    font-weight: 200;
+    font-size: small;
+    letter-spacing: .02rem;
+}
+.time-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+}
+.time-info .time, .time-info .time span {
+    color: var(--cyan);
+}
+.time-info .time, .time-info .days span {
+    color: var(--soft-blue);
+}
+.time-info .time, .time-info .days {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: .2rem;
+}
+.time-info .time div img, .time-info .days div img {
+    width: 70%;
+    margin-top: 12%;
+}
+hr {
+    display: block;
+    height: 0.1rem;
+    border: 0;
+    border-top: 1px solid var(--line-color);
+    margin-top: .2rem;
+    padding: 0;
+}
+.credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    height: 6vh;
+}
+.credit img {
+    flex-basis: 2%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+.credit span {
+    width: 90%;
+    font-size: .8rem;
+    color: var(--soft-blue);
+    font-weight: 200;
+}
+.credit span span {
+    color: var(--white);
+}
